@@ -748,7 +748,7 @@ vAPI.handleInstallUpgrade =function(installData){
 		if(installData.reason == "update" && vAPI.chrome){
 			
 			//Open FAQ page 
-			vAPI.openFAQ();
+		//	vAPI.openFAQ();
 		
 			if(vAPI.compareVersion(data.installedVersion,data.existingVersion) == 0){
 				
@@ -785,7 +785,7 @@ vAPI.handleInstallUpgrade =function(installData){
 			
 		}else if(installData.reason == "install"){
 			//Open FAQ page 
-			vAPI.openFAQ();
+			//vAPI.openFAQ();
 		}
 		// Handle 
 		 
