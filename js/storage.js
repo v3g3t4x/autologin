@@ -4,7 +4,7 @@ var storage = {
 	autologinsites : [],
 	credential:null,
 	promptrequired:'false',
-	usebasicauth:'false',
+	usebasicauth:'true',
 	showcaptureonlyonfocus:'true',
 	getExportData:function(callback){
 		
