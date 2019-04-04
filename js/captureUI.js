@@ -71,7 +71,7 @@ vAPI.captureUI={
 						//padding-top:128px;width:133px;
 						
 						
-						document.body.appendChild(divelem);
+						//document.body.appendChild(divelem);
 						document.querySelector("div#captureUI").addEventListener('click', vAPI.captureUI.onCaptureAutoLogin, false);
 		
 	
