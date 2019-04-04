@@ -100,12 +100,12 @@ var autoLoginOptions = {
 	document.querySelector("#navigation").style.visibility="visible"
 	document.querySelector("#mnusitesparent").setAttribute("class", "current");
 	document.querySelector("#mnuautologinsettingsparent").removeAttribute("class");
-	document.querySelector("#mnusupportparent").removeAttribute("class");
+
 	
 	document.querySelector("#divSites").style.display="";
 	document.querySelector("#divpasswordask").style.display="none";
 	document.querySelector("#divpasswordchange").style.display="none";
-	document.querySelector("#divsupport").style.display="none";
+
 	
 	autoLoginOptions.loadOptions();
 	
@@ -218,12 +218,12 @@ flashsuccess:function(txt){
 	document.querySelector("#navigation").style.visibility="visible"
 	document.querySelector("#mnuautologinsettingsparent").setAttribute("class", "current");
 	document.querySelector("#mnusitesparent").removeAttribute("class");
-	document.querySelector("#mnusupportparent").removeAttribute("class");
+
 	
 	
 	document.querySelector("#divSites").style.display="none";
 	document.querySelector("#divpasswordask").style.display="none";
-	document.querySelector("#divsupport").style.display="none";
+
 	
 	document.querySelector("#divpasswordchange").style.display="";
 	autoLoginOptions.loadSettings();
@@ -241,12 +241,12 @@ flashsuccess:function(txt){
 	document.querySelector("#mnusitesparent").removeAttribute("class");
 	document.querySelector("#mnuautologinsettingsparent").removeAttribute("class");
 	
-	document.querySelector("#mnusupportparent").setAttribute("class", "current");
+
 	
 	
 	
 	document.querySelector("#divSites").style.display="none";
-	document.querySelector("#divsupport").style.display="";
+	
 	document.querySelector("#divpasswordask").style.display="none";
 	document.querySelector("#divpasswordchange").style.display="none";
 	
@@ -262,7 +262,7 @@ flashsuccess:function(txt){
 	
 	
 	document.querySelector("#divSites").style.display="none";
-	document.querySelector("#divsupport").style.display="none";
+	
 	document.querySelector("#divpasswordask").style.display="";
 	document.querySelector("#divpasswordchange").style.display="none";
 	
@@ -318,7 +318,7 @@ flashsuccess:function(txt){
 	
 	document.querySelector('a#mnusites').addEventListener('click', autoLoginOptions.menuSitesClicked, false);
 	document.querySelector('a#mnuautologinsettings').addEventListener('click', autoLoginOptions.menuAutologinSettingsClicked, false);
-	document.querySelector('a#mnusupport').addEventListener('click', autoLoginOptions.showSupport, false);
+	
 	
 		
 		 
