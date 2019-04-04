@@ -1,6 +1,8 @@
 Auto Login
 =========
 
+Modify: start with basic authentication already enabled for use into selenoid with selenium
+
 AUtologin Extension for Firefox & Chrome 
 
 	To Login  to your websites automatically.
