@@ -100,12 +100,12 @@ var autoLoginOptions = {
 	document.querySelector("#navigation").style.visibility="visible"
 	document.querySelector("#mnusitesparent").setAttribute("class", "current");
 	document.querySelector("#mnuautologinsettingsparent").removeAttribute("class");
-	document.querySelector("#mnusupportparent").removeAttribute("class");
+	
 	
 	document.querySelector("#divSites").style.display="";
 	document.querySelector("#divpasswordask").style.display="none";
 	document.querySelector("#divpasswordchange").style.display="none";
-	document.querySelector("#divsupport").style.display="none";
+	
 	
 	autoLoginOptions.loadOptions();
 	
@@ -218,7 +218,7 @@ flashsuccess:function(txt){
 	document.querySelector("#navigation").style.visibility="visible"
 	document.querySelector("#mnuautologinsettingsparent").setAttribute("class", "current");
 	document.querySelector("#mnusitesparent").removeAttribute("class");
-	document.querySelector("#mnusupportparent").removeAttribute("class");
+	
 	
 	
 	document.querySelector("#divSites").style.display="none";
@@ -241,7 +241,7 @@ flashsuccess:function(txt){
 	document.querySelector("#mnusitesparent").removeAttribute("class");
 	document.querySelector("#mnuautologinsettingsparent").removeAttribute("class");
 	
-	document.querySelector("#mnusupportparent").setAttribute("class", "current");
+	
 	
 	
 	
@@ -318,7 +318,7 @@ flashsuccess:function(txt){
 	
 	document.querySelector('a#mnusites').addEventListener('click', autoLoginOptions.menuSitesClicked, false);
 	document.querySelector('a#mnuautologinsettings').addEventListener('click', autoLoginOptions.menuAutologinSettingsClicked, false);
-	document.querySelector('a#mnusupport').addEventListener('click', autoLoginOptions.showSupport, false);
+	
 	
 		
 		 
@@ -398,11 +398,11 @@ flashsuccess:function(txt){
 						
 						
 		messager.send({module:"options",action: "getUseBasicAuth"}, function(response) {
-				
-						if(response.usebasicauth == true || response.usebasicauth == "true")
+						//Update for return always true for option use basic auth
+						//if(response.usebasicauth == true || response.usebasicauth == "true")
 							document.querySelector('#chkpromptBasicAuth').checked=true
-						else	
-							document.querySelector('#chkpromptBasicAuth').checked=false
+						//else	
+						//	document.querySelector('#chkpromptBasicAuth').checked=false
 				
 						});
 						
