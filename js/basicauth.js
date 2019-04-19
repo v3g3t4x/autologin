@@ -43,12 +43,12 @@ var basicauth={
 		var title="The Page "+response.url+" requires username & password"
 		var realmtitle="Sign In , The realm says " + response.realm
 		
-		 document.querySelector("#pagetitle").innerHTML=title
+		 //document.querySelector("#pagetitle").innerHTML=title
 		 BetterInnerHTML()
 		 if(response.realm)
 			BetterInnerHTML(document.querySelector("#realm"),realmtitle)
-		else
-			document.querySelector("#realm").innerHTML="Sign In "
+		//else
+		//	document.querySelector("#realm").innerHTML="Sign In "
 		 
 		//var extnid=vAPI.getURL("/") 
 		
